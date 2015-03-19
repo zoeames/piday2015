@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  color: white;
 }
 
 .row{
@@ -7,12 +8,11 @@ body{
 }
 
 #circle{
-  height: 800px;
-  width: 800px;
+  height: 805px;
+  width: 805px;
   border: 3px solid black;
   border-radius: 50%;
-  padding: 5px;
-  background-color: white;
+  color: white;
 }
 
 .row{
@@ -22,43 +22,43 @@ body{
 
 .one{
   display: inline-block;
-  background-color: green;
+  color: green;
 }
 .two{
   display: inline-block;
-  background-color: yellow;
+  color: yellow;
 }
 .three{
   display: inline-block;
-  background-color: pink;
+  color: pink;
 }
 .four{
   display: inline-block;
-  background-color: red;
+  color: red;
 }
 .five{
   display: inline-block;
-  background-color: blue;
+  color: blue;
 }
 .six{
   display: inline-block;
-  background-color: orange;
+  color: orange;
 }
 .seven{
   display: inline-block;
-  background-color: grey;
+  color: grey;
 }
 .eight{
   display: inline-block;
-  background-color: purple;
+  color: purple;
 }
 .nine{
   display: inline-block;
-  background-color: lightblue;
+  color: lightblue;
 }
 .zero{
   display: inline-block;
-  background-color: lime;
+  color: lime;
 }
 .other{
   display: inline-block;
