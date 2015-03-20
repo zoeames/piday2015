@@ -19,6 +19,23 @@ body{
   text-align: center;
 }
 
+.left_column{
+  width: 850px;
+  float: left;
+}
+
+.right_column {
+  width: 400px;
+  float: right;
+}
+
+.text{
+  float:left;
+}
+
+#words{
+  display: inline-block;
+}
 
 .one{
   display: inline-block;
