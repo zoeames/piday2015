@@ -37,46 +37,6 @@ body{
   display: inline-block;
 }
 
-.one{
-  display: inline-block;
-  color: green;
-}
-.two{
-  display: inline-block;
-  color: yellow;
-}
-.three{
-  display: inline-block;
-  color: pink;
-}
-.four{
-  display: inline-block;
-  color: red;
-}
-.five{
-  display: inline-block;
-  color: blue;
-}
-.six{
-  display: inline-block;
-  color: orange;
-}
-.seven{
-  display: inline-block;
-  color: grey;
-}
-.eight{
-  display: inline-block;
-  color: purple;
-}
-.nine{
-  display: inline-block;
-  color: lightblue;
-}
-.zero{
-  display: inline-block;
-  color: lime;
-}
-.other{
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .other{
   display: inline-block;
 }
