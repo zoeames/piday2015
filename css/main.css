@@ -24,16 +24,30 @@ body{
   float: left;
 }
 
-.right_column {
-  width: 400px;
+
+#myleft {
+  width: 440px;
   float: right;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
-.text{
-  float:left;
+.spcrbtm {
+  margin-bottom: 20px;
+}
+
+.spcr{
+  height: 200px;
+}
+
+.leftwidth{
+  width: 440px;
 }
 
 #words{
+  width: 440px;
+  text-align: center;
   display: inline-block;
 }
 
