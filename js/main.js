@@ -49,4 +49,15 @@ for(var k=0; k<rowLength.length; k++){
 }
 
 
+
+$("#piOrder").on('click', function(){
+  console.log("order of Pi function");
+});
+
+$("#piDuration").on('click', function(){
+  console.log("Duration of Pi function");
+});
+
+
+
 //$( "#circle" ).css("color", "black" ).delay(10000).css("color", "red" );
