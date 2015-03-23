@@ -44,23 +44,23 @@ for(var k=0; k<rowLength.length; k++){
 
 
 
-
-//STARTS BLINKING
-$("#piOrder").on('click', function(){
-  console.log("button clicked");
-  setInterval(turnOn, 1000);
-});
-
-$("#piDuration").on('click', function(){
-  console.log("Duration of Pi function");
-});
-
-
+//variables for blinking
 var currentIndex = 0;
-var inputColor="white"
+var inputColor="white";
+var inputClass="";
 var white = true;
 var colors = ["#FF0000","#FFA500","#F3F315","#98FF98","#ADD8E6","#A400D3","#0000FF","#50C878", "#FFDF00", "#FF7F50", "#808080"];
+var classes = [".zero", ".one", ".two", ".three", ".four", ".five", ".six", ".seven", ".eight", ".nine", ".other"];
 var timerID = null;
+
+
+
+//DURATION OF PI FUNCTIONALITY
+$("#piDuration").on('click', function(){
+  console.log("button clicked");
+  setInterval(turnOn, 3145);
+
+});
 
 function turnOn() {
   if (!white) {
@@ -69,10 +69,17 @@ function turnOn() {
   } else {
     white = false;
     inputColor = colors[currentIndex];
+    inputClass = classes[currentIndex];
     if (currentIndex === colors.length) {
       return;
     }
     currentIndex++;
   }
-  $(".three").css("color", inputColor);
+  $(inputClass).css("color", inputColor);
 }
+
+
+//ORDER OF PI FUNCTIONALITY
+$("#piOrder").on('click', function(){
+  console.log("Order of Pi function");
+});
