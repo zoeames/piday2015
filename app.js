@@ -1,12 +1,13 @@
-var connect = require('connect');
-var serveStatic = require('serve-static');
-var morgan = require('morgan');
-var port = process.env.PORT;
+var express = require('express');
+var app = express();
 
-var app = connect();
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
 
-app.use(morgan('dev'));
-app.use(serveStatic('public'));
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
 
-app.listen(port);
-console.log('Node listening on port ' + port);
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
