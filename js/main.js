@@ -47,7 +47,8 @@ for(var k=0; k<rowLength.length; k++){
 
 //STARTS BLINKING
 $("#piOrder").on('click', function(){
-  turnOn();
+  console.log("button clicked");
+  setInterval(turnOn, 1000);
 });
 
 $("#piDuration").on('click', function(){
@@ -55,31 +56,23 @@ $("#piDuration").on('click', function(){
 });
 
 
-
-
-
+var currentIndex = 0;
+var inputColor="white"
+var white = true;
+var colors = ["#FF0000","#FFA500","#F3F315","#98FF98","#ADD8E6","#A400D3","#0000FF","#50C878", "#FFDF00", "#FF7F50", "#808080"];
 var timerID = null;
-function DelayedAlertOff () {
-  console.log("DelayedAlertOff function fired");
-  if (timerID === null) {
-    timerID = setTimeout ("turnOff()", 3000);
 
+function turnOn() {
+  if (!white) {
+    white = true;
+    inputColor = "white";
+  } else {
+    white = false;
+    inputColor = colors[currentIndex];
+    if (currentIndex === colors.length) {
+      return;
+    }
+    currentIndex++;
   }
-}
-
-function turnOn () {
-  $(".three").css("color", "red")
-  console.log("color changed to red");
-  CancelTimer ();
-  DelayedAlertOff();
-}
-function turnOff () {
-  $(".three").css("color", "white")
-  console.log("color changed to white");
-  CancelTimer ();
-}
-
-function CancelTimer () {
-  clearTimeout (timerID);
-  timerID = null;
+  $(".three").css("color", inputColor);
 }
