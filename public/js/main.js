@@ -82,6 +82,7 @@ function turnDurationOn() {
 
 //ORDER OF PI FUNCTIONALITY
 $("#piOrder").on('click', function(){
+  console.log("button clicked");
   setInterval(turnOrderOn, 500);
 });
 

@@ -54,3 +54,10 @@ body{
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .other{
   display: inline-block;
 }
+
+
+
+.button-440px{
+  width: 400px;
+  display: inline-block;
+}
