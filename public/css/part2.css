@@ -34,15 +34,15 @@ nav li {
   background: black;
 }
 .zero { transform: skewX(50deg); }
-.vanilla { transform: rotate(36deg) skewX(50deg); }
-.orange { transform: rotate(72deg) skewX(50deg); }
-.almond { transform: rotate(108deg) skewX(50deg); }
-.grape { transform: rotate(144deg) skewX(50deg); }
-.blackberry { transform: rotate(-144deg) skewX(50deg); }
-.cherry { transform: rotate(-108deg) skewX(50deg); }
-.strawberry { transform: rotate(-72deg) skewX(50deg); }
-.raspberry { transform: rotate(-36deg) skewX(50deg); }
-.nine { transform: rotate(-180deg) skewX(50deg); }
+.one { transform: rotate(36deg) skewX(50deg); }
+.two { transform: rotate(72deg) skewX(50deg); }
+.three { transform: rotate(108deg) skewX(50deg); }
+.four { transform: rotate(144deg) skewX(50deg); }
+.five { transform: rotate(-180deg) skewX(50deg); }
+.six { transform: rotate(-144deg) skewX(50deg); }
+.seven { transform: rotate(-108deg) skewX(50deg); }
+.eight { transform: rotate(-72deg) skewX(50deg); }
+.nine { transform: rotate(-36deg) skewX(50deg); }
 .magnifiable { height: 100%; }
 nav label { cursor: pointer; }
 .slice label {
@@ -75,30 +75,37 @@ nav label { cursor: pointer; }
   display: block;
   height: 100%;
 }
-.zero label, .ozero:checked ~ nav .unsel { background: #f4f5fa; }
-.vanilla label, .ovanilla:checked ~ nav .unsel { background: #ffeb98; }
-.orange label, .oorange:checked ~ nav .unsel { background: #ffb038; }
-.almond label, .oalmond:checked ~ nav .unsel { background: #d3a573; }
-.grape label, .ogrape:checked ~ nav .unsel { background: #d9e260; }
-.blackberry label, .oblackberry:checked ~ nav .unsel { background: #833a68; }
-.cherry label, .ocherry:checked ~ nav .unsel { background: #b1001d; }
-.strawberry label, .ostrawberry:checked ~ nav .unsel { background: #ec0404; }
-.raspberry label, .oraspberry:checked ~ nav .unsel { background: #ef6982; }
+.zero label, .ozero:checked ~ nav .unsel { background: #104476;}
+.one label, .oone:checked ~ nav .unsel { background: #FDEE50;}
+.two label, .otwo:checked ~ nav .unsel { background: #50c878;}
+.three label, .othree:checked ~ nav .unsel { background: #96B09D;}
+.four label, .ofour:checked ~ nav .unsel { background: #9F79EE;}
+.five label, .ofive:checked ~ nav .unsel { background: #c73d32;}
+.six label, .osix:checked ~ nav .unsel { background: #00BFFF;}
+.seven label, .oseven:checked ~ nav .unsel { background: #B3E612;}
+.eight label, .oeight:checked ~ nav .unsel { background: #532C60;}
+.nine label, .onine:checked ~ nav .unsel { background: #bf855b;}
+
+
+
+
+
 .slice label:hover:after { opacity: 0; }
-.ozero:checked ~ nav .coconut { transform: skewX(50deg) scale(1.05); }
-.ovanilla:checked ~ nav .vanilla { transform: rotate(36deg) skewX(50deg) scale(1.05); }
-.oorange:checked ~ nav .orange { transform: rotate(72deg) skewX(50deg) scale(1.05); }
-.oalmond:checked ~ nav .almond { transform: rotate(108deg) skewX(50deg) scale(1.05); }
-.ogrape:checked ~ nav .grape { transform: rotate(144deg) skewX(50deg) scale(1.05); }
-.oblackberry:checked ~ nav .blackberry { transform: rotate(-144deg) skewX(50deg) scale(1.05); }
-.ocherry:checked ~ nav .cherry { transform: rotate(-108deg) skewX(50deg) scale(1.05); }
-.ostrawberry:checked ~ nav .strawberry { transform: rotate(-72deg) skewX(50deg) scale(1.05); }
-.oraspberry:checked ~ nav .raspberry { transform: rotate(-36deg) skewX(50deg) scale(1.05); }
+.ozero:checked ~ nav .zero { transform: skewX(50deg) scale(1.05); }
+.oone:checked ~ nav .one { transform: rotate(36deg) skewX(50deg) scale(1.05); }
+.otwo:checked ~ nav .two { transform: rotate(72deg) skewX(50deg) scale(1.05); }
+.othree:checked ~ nav .three { transform: rotate(108deg) skewX(50deg) scale(1.05); }
+.ofour:checked ~ nav .four { transform: rotate(144deg) skewX(50deg) scale(1.05); }
+.ofive:checked ~ nav .five { transform: rotate(-180deg) skewX(50deg) scale(1.05); }
+.osix:checked ~ nav .six { transform: rotate(-144deg) skewX(50deg) scale(1.05); }
+.oseven:checked ~ nav .seven { transform: rotate(-108deg) skewX(50deg) scale(1.05); }
+.oeight:checked ~ nav .eight { transform: rotate(-72deg) skewX(50deg) scale(1.05); }
+.onine:checked ~ nav .eight { transform: rotate(-36deg) skewX(50deg) scale(1.05); }
 .ozero:checked ~ nav .zero label,
-.ovanilla:checked ~ nav .vanilla label,
-.oorange:checked ~ nav .orange label,
-.oalmond:checked ~ nav .almond label,
-.ogrape:checked ~ nav .grape label,
+.oone:checked ~ nav .one label,
+.otwo:checked ~ nav .two label,
+.othree:checked ~ nav .three label,
+.ofour:checked ~ nav .four label,
 
 @media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
 @media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
