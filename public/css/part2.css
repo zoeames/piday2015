@@ -58,23 +58,10 @@ nav label { cursor: pointer; }
   text-decoration: none;
   transition: 1s;
 }
-.slice label:before {
-  position: absolute;
-  top: 10%; left: 10%;
-  width: 80%; height: 80%;
-  border-radius: 50%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: 35% 35%;
-  content: '';
-}
+
 .slice label:hover { opacity: 1; }
 .dark label:hover { color: black; }
-.light label:hover { color: black; }
-.unsel label {
-  display: block;
-  height: 100%;
-}
+
 .zero label, .ozero:checked ~ nav .unsel { background: #104476;}
 .one label, .oone:checked ~ nav .unsel { background: #FDEE50;}
 .two label, .otwo:checked ~ nav .unsel { background: #50c878;}
@@ -91,21 +78,30 @@ nav label { cursor: pointer; }
 
 
 .slice label:hover:after { opacity: 0; }
-.ozero:checked ~ nav .zero { transform: skewX(50deg) scale(1.05); }
-.oone:checked ~ nav .one { transform: rotate(36deg) skewX(50deg) scale(1.05); }
-.otwo:checked ~ nav .two { transform: rotate(72deg) skewX(50deg) scale(1.05); }
-.othree:checked ~ nav .three { transform: rotate(108deg) skewX(50deg) scale(1.05); }
-.ofour:checked ~ nav .four { transform: rotate(144deg) skewX(50deg) scale(1.05); }
-.ofive:checked ~ nav .five { transform: rotate(-180deg) skewX(50deg) scale(1.05); }
-.osix:checked ~ nav .six { transform: rotate(-144deg) skewX(50deg) scale(1.05); }
-.oseven:checked ~ nav .seven { transform: rotate(-108deg) skewX(50deg) scale(1.05); }
-.oeight:checked ~ nav .eight { transform: rotate(-72deg) skewX(50deg) scale(1.05); }
-.onine:checked ~ nav .eight { transform: rotate(-36deg) skewX(50deg) scale(1.05); }
+.ozero:checked ~ nav .zero { transform: skewX(50deg) scale(1); }
+.oone:checked ~ nav .one { transform: rotate(36deg) skewX(50deg) scale(1); }
+.otwo:checked ~ nav .two { transform: rotate(72deg) skewX(50deg) scale(1); }
+.othree:checked ~ nav .three { transform: rotate(108deg) skewX(50deg) scale(1); }
+.ofour:checked ~ nav .four { transform: rotate(144deg) skewX(50deg) scale(1); }
+.ofive:checked ~ nav .five { transform: rotate(-180deg) skewX(50deg) scale(1); }
+.osix:checked ~ nav .six { transform: rotate(-144deg) skewX(50deg) scale(1); }
+.oseven:checked ~ nav .seven { transform: rotate(-108deg) skewX(50deg) scale(1); }
+.oeight:checked ~ nav .eight { transform: rotate(-72deg) skewX(50deg) scale(1); }
+.onine:checked ~ nav .eight { transform: rotate(-36deg) skewX(50deg) scale(1); }
 .ozero:checked ~ nav .zero label,
 .oone:checked ~ nav .one label,
 .otwo:checked ~ nav .two label,
 .othree:checked ~ nav .three label,
 .ofour:checked ~ nav .four label,
+.ofive:checked ~ nav .five label,
+.osix:checked ~ nav .six label,
+.oseven:checked ~ nav .seven label,
+.oeight:checked ~ nav .eight label,
+.onine:checked ~ nav .nine label{
+  box-shadow: 0 0 .45em rgba(0,0,0,.5);
+  opacity: 1; color: white;
+}
 
-@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
+
+@media (min-width: 25em) { .slice label { font-size: 3em; line-height: 2.3; } }
 @media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
