@@ -3,6 +3,11 @@ body{
   color: white;
 }
 
+.bgrd{
+  background-color: black;
+  color: white;
+}
+
 .row{
   text-align: center;
 }

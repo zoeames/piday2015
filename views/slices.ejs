@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>PI DAY 2015</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/slices.css">
 
 
@@ -11,43 +13,70 @@
 </head>
 
 <body>
-  <nav>
-    <ul class='circle'>
-      <li class='zero dark slice'>
-          <label for='ozero' class='circle'>0</label>
-      </li>
-      <li class='one dark slice'>
-          <label for='oone' class='circle'>1</label>
-      </li>
-      <li class='two dark slice'>
-          <label for='otwo' class='circle'>2</label>
-      </li>
-      <li class='three dark slice'>
-          <label for='othree' class='circle'>3</label>
-      </li>
-      <li class='four dark slice'>
-          <label for='ofour' class='circle'>4</label>
-      </li>
-      <li class='five dark slice'>
-          <label for='ofive' class='circle'>5</label>
-      </li>
-      <li class='six dark slice'>
-          <label for='osix' class='circle'>6</label>
-      </li>
-      <li class='seven dark slice'>
-          <label for='oseven' class='circle'>7</label>
-      </li>
-      <li class='eight dark slice'>
-          <label for='oeight' class='circle'>8</label>
-      </li>
-      <li class='nine dark slice'>
-          <label for='onine' class='circle'>9</label>
-      </li>
-      <li class='unsel circle'><label for='unsel'></label></li>
-    </ul>
-  </nav>
+  <div class="page-container">
+
+    <!-- top navbar -->
+      <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+          <!-- sidebar -->
+          <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation">
+              <ul class="nav">
+                <li><a href="/">PiDay 2015</a></li>
+                <li><a href="/blinkr">Blinkr</a></li>
+                <li class="active"><a href="/slices">Slices</a></li>
+                <li><a href="/spiral">Sprial</a></li>
+              </ul>
+          </div>
+
+          <!-- main area -->
+          <div class="col-xs-12 col-sm-10">
+            <nav class="slices">
+              <ul class='circle'>
+                <li class='zero dark slice'>
+                    <label for='ozero' class='circle'>0</label>
+                </li>
+                <li class='one dark slice'>
+                    <label for='oone' class='circle'>1</label>
+                </li>
+                <li class='two dark slice'>
+                    <label for='otwo' class='circle'>2</label>
+                </li>
+                <li class='three dark slice'>
+                    <label for='othree' class='circle'>3</label>
+                </li>
+                <li class='four dark slice'>
+                    <label for='ofour' class='circle'>4</label>
+                </li>
+                <li class='five dark slice'>
+                    <label for='ofive' class='circle'>5</label>
+                </li>
+                <li class='six dark slice'>
+                    <label for='osix' class='circle'>6</label>
+                </li>
+                <li class='seven dark slice'>
+                    <label for='oseven' class='circle'>7</label>
+                </li>
+                <li class='eight dark slice'>
+                    <label for='oeight' class='circle'>8</label>
+                </li>
+                <li class='nine dark slice'>
+                    <label for='onine' class='circle'>9</label>
+                </li>
+                <li class='unsel circle'><label for='unsel'></label></li>
+              </ul>
+            </nav>
+
+          </div><!-- /.col-xs-12 main -->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.page-container-->
+
+
+
 
   <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="/javascripts/slices.js"></script>
 
 </body>
