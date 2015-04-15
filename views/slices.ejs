@@ -1,36 +1,52 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>PI DAY 2015</title>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/stylesheets/slices.css">
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PiDay 2015</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/bootstrap/simple-sidebar.css" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="/stylesheets/slices.css">
 
 </head>
 
 <body>
-  <div class="page-container">
 
-    <!-- top navbar -->
-      <div class="container">
-        <div class="row row-offcanvas row-offcanvas-left">
+    <div id="wrapper">
 
-          <!-- sidebar -->
-          <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation">
-              <ul class="nav">
-                <li><a href="/">PiDay 2015</a></li>
-                <li><a href="/blinkr">Blinkr</a></li>
-                <li class="active"><a href="/slices">Slices</a></li>
-                <li><a href="/spiral">Sprial</a></li>
-              </ul>
-          </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                        PiDay2015
+                    </a>
+                </li>
+                <li>
+                    <a href="/blinkr">Blinkr</a>
+                </li>
+                <li>
+                    <a href="/slices">Slices</a>
+                </li>
+                <li>
+                    <a href="/spiral">Spiral</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-          <!-- main area -->
-          <div class="col-xs-12 col-sm-10">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+
+            <div class="col-xs-12 col-sm-10">
             <nav class="slices">
               <ul class='circle'>
                 <li class='zero dark slice'>
@@ -68,16 +84,27 @@
             </nav>
 
           </div><!-- /.col-xs-12 main -->
-      </div><!--/.row-->
-    </div><!--/.container-->
-  </div><!--/.page-container-->
 
+            </div>
+        </div><!-- /#page-content-wrapper -->
+        
+    </div><!-- /#wrapper -->
 
+    <!-- jQuery -->
+    <script src="javascripts/bootstrap/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="javascripts/bootstrap/bootstrap.min.js"></script>
+     <script src="/javascripts/slices.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="/javascripts/slices.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
+
 </html>
