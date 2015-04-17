@@ -6,6 +6,7 @@ body {
   position: relative;
   width: 800px; height: 800px;
   border-radius: 50%;
+  border: solid 4px black;
   background: 
     linear-gradient(36deg, #272b66 42.34%, transparent 42.34%) 0 0,
     linear-gradient(72deg, #2d559f 75.48%, transparent 75.48%) 0 0,
