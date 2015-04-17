@@ -1,107 +1,126 @@
-/**
- * Circular menu v2
- */
-* { margin: 0; padding: 0; }
-html { font: 100%/1.3 Century Gothic, Verdana, sans-serif; }
-body { overflow: hidden; min-width: 20em; }
-.menuopt { display: none; }
-.circle, .circle:before, .circle:after { border-radius: 50%; }
-.slices {
-  margin: 5em auto;
-  min-width: 16em; width: 80%; max-width: 40em;
+body { 
+  background: gainsboro; 
 }
-.slices ul {
+
+.colorWheel {
   position: relative;
-  padding: 50%;
-  max-width: 0; max-height: 0;
-  list-style: none;
-  background: white;
-}
-.slices li {
-  position: absolute;
-  transition: 2s;
-}
-.slice {
-  overflow: hidden;
-  position: absolute;
-  top: 0; left: 0;
-  width: 50%; height: 50%;
-  transform-origin: 100% 100%;
-}
-.unsel {
-  top: 34%; left: 34%;
-  width: 32%; height: 32%;
-  background: black;
-}
-.zero { transform: skewX(50deg); }
-.one { transform: rotate(36deg) skewX(50deg); }
-.two { transform: rotate(72deg) skewX(50deg); }
-.three { transform: rotate(108deg) skewX(50deg); }
-.four { transform: rotate(144deg) skewX(50deg); }
-.five { transform: rotate(-180deg) skewX(50deg); }
-.six { transform: rotate(-144deg) skewX(50deg); }
-.seven { transform: rotate(-108deg) skewX(50deg); }
-.eight { transform: rotate(-72deg) skewX(50deg); }
-.nine { transform: rotate(-36deg) skewX(50deg); }
-.magnifiable { height: 100%; }
-nav label { cursor: pointer; }
-.slice label {
-  display: block;
-  width: 200%; height: 200%;
-  transform: skew(-50deg) rotate(-70deg);
-  box-shadow: 0 0 .1em black;
-  opacity: .5;
-  color: black;
-  font-size: .8em;
-  line-height: 1.9;
-  text-align: center;
-  text-decoration: none;
+  width: 800px; height: 800px;
+  border-radius: 50%;
+  background: 
+    linear-gradient(36deg, #272b66 42.34%, transparent 42.34%) 0 0,
+    linear-gradient(72deg, #2d559f 75.48%, transparent 75.48%) 0 0,
+    linear-gradient(-36deg, #9ac147 42.34%, transparent 42.34%) 100% 0,
+    linear-gradient(-72deg, #639b47 75.48%, transparent 75.48%) 100% 0, 
+    linear-gradient(36deg, transparent 57.66%, #e1e23b 57.66%) 100% 100%,
+    linear-gradient(72deg, transparent 24.52%, #f7941e 24.52%) 100% 100%,
+    linear-gradient(-36deg, transparent 57.66%, #662a6c 57.66%) 0 100%,
+    linear-gradient(-72deg, transparent 24.52%, #9a1d34 24.52%) 0 100%, 
+    #43a1cd linear-gradient(#ba3e2e, #ba3e2e) 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
   transition: 1s;
 }
 
-.slice label:hover { opacity: 1; }
-.dark label:hover { color: black; }
+.colorWheel:after {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -100px;
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  background: black;
+  content: '';
+}
 
-.zero label, .ozero:checked ~ nav .unsel { background: #104476;}
-.one label, .oone:checked ~ nav .unsel { background: #FDEE50;}
-.two label, .otwo:checked ~ nav .unsel { background: #50c878;}
-.three label, .othree:checked ~ nav .unsel { background: #96B09D;}
-.four label, .ofour:checked ~ nav .unsel { background: #9F79EE;}
-.five label, .ofive:checked ~ nav .unsel { background: #c73d32;}
-.six label, .osix:checked ~ nav .unsel { background: #00BFFF;}
-.seven label, .oseven:checked ~ nav .unsel { background: #B3E612;}
-.eight label, .oeight:checked ~ nav .unsel { background: #532C60;}
-.nine label, .onine:checked ~ nav .unsel { background: #bf855b;}
+.numberz{
+  position: absolute;
+  color: white;
+}
 
+.zero{
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  top: 253px;
+  left: 30px;
+}
 
+.one{
+  -webkit-transform: rotate(-36deg);
+  -moz-transform: rotate(-36deg);
+  -ms-transform: rotate(-36deg);
+  -o-transform: rotate(-36deg);
+  top: 60px;
+  left: 170px;
+}
 
+.two{
+  top: -10px;
+  left: 400px;
+}
 
+.three{
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  top: 60px;
+  left: 610px;
+}
 
-.slice label:hover:after { opacity: 0; }
-.ozero:checked ~ nav .zero { transform: skewX(50deg) scale(1); }
-.oone:checked ~ nav .one { transform: rotate(36deg) skewX(50deg) scale(1); }
-.otwo:checked ~ nav .two { transform: rotate(72deg) skewX(50deg) scale(1); }
-.othree:checked ~ nav .three { transform: rotate(108deg) skewX(50deg) scale(1); }
-.ofour:checked ~ nav .four { transform: rotate(144deg) skewX(50deg) scale(1); }
-.ofive:checked ~ nav .five { transform: rotate(-180deg) skewX(50deg) scale(1); }
-.osix:checked ~ nav .six { transform: rotate(-144deg) skewX(50deg) scale(1); }
-.oseven:checked ~ nav .seven { transform: rotate(-108deg) skewX(50deg) scale(1); }
-.oeight:checked ~ nav .eight { transform: rotate(-72deg) skewX(50deg) scale(1); }
-.onine:checked ~ nav .eight { transform: rotate(-36deg) skewX(50deg) scale(1); }
-.ozero:checked ~ nav .zero label,
-.oone:checked ~ nav .one label,
-.otwo:checked ~ nav .two label,
-.othree:checked ~ nav .three label,
-.ofour:checked ~ nav .four label,
-.ofive:checked ~ nav .five label,
-.osix:checked ~ nav .six label,
-.oseven:checked ~ nav .seven label,
-.oeight:checked ~ nav .eight label,
-.onine:checked ~ nav .nine label{
-  box-shadow: 0 0 .45em rgba(0,0,0,.5);
-  opacity: 1; color: white;
+.four{
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  top: 253px;
+  left: 750px;
+}
+
+.five{
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  top: 490px;
+  left: 750px;
+}
+
+.six{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  top: 745px;
+  left: 390px;
+}
+
+.seven{
+  -webkit-transform: rotate(-220deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  top: 670px;
+  left: 615px;
+}
+
+.eight{
+  -webkit-transform: rotate(-145deg);
+  -moz-transform: rotate(-145deg);
+  -ms-transform: rotate(-145deg);
+  -o-transform: rotate(-145deg);
+  top: 675px;
+  left: 165px;
+}
+
+.nine{
+  -webkit-transform: rotate(-110deg);
+  -moz-transform: rotate(-110deg);
+  -ms-transform: rotate(-110deg);
+  -o-transform: rotate(-110deg);
+  top: 490px;
+  left: 30px;
 }
 
 
-@media (min-width: 25em) { .slice label { font-size: 3em; line-height: 2.3; } }
-@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
