@@ -19,6 +19,7 @@ body {
     #43a1cd linear-gradient(#ba3e2e, #ba3e2e) 50% 100%;
   background-repeat: no-repeat;
   background-size: 50% 50%;
+  z-index: 0;
   transition: 1s;
 }
 
@@ -29,6 +30,7 @@ body {
   width: 200px; 
   height: 200px;
   border-radius: 50%;
+  z-index: 1;
   background: black;
   content: '';
 }
@@ -123,5 +125,42 @@ body {
   top: 490px;
   left: 30px;
 }
+
+
+
+.hand {
+position: absolute;
+width: 10px; 
+height: 42%;
+top: 8%; /* offset hand vertically by 20% so its bottom is at center of circle */
+left: 50%; /* offset hand horiz by 50% so its left is at center of circle*/
+margin-left: -5px; /* Account for hand width to center hand horizonally */
+background: white;
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+-moz-transform-origin: bottom; /* Set transform origin to center bottom */
+-ms-transform-origin: bottom;
+-webkit-transform-origin: bottom;
+transform-origin: bottom;
+z-index: 2;
+-moz-box-shadow: 0 0 3px gray;
+-webkit-box-shadow: 0 0 3px gray;
+box-shadow: 0 0 3px gray
+}
+
+
+.whiteCircle{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: white;
+  top: 47%;
+  left: 47%;
+}
+
 
 
