@@ -45,7 +45,7 @@ body {
   -moz-transform: rotate(-70deg);
   -ms-transform: rotate(-70deg);
   -o-transform: rotate(-70deg);
-  top: 253px;
+  top: 248px;
   left: 30px;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .two{
   top: -10px;
-  left: 400px;
+  left: 387px;
 }
 
 .three{
@@ -69,7 +69,7 @@ body {
   -ms-transform: rotate(36deg);
   -o-transform: rotate(36deg);
   top: 60px;
-  left: 610px;
+  left: 607px;
 }
 
 .four{
@@ -77,7 +77,7 @@ body {
   -moz-transform: rotate(70deg);
   -ms-transform: rotate(70deg);
   -o-transform: rotate(70deg);
-  top: 253px;
+  top: 245px;
   left: 750px;
 }
 
@@ -86,26 +86,26 @@ body {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  top: 490px;
+  top: 480px;
   left: 750px;
 }
 
 .six{
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  top: 745px;
-  left: 390px;
+  -webkit-transform: rotate(-220deg);
+  -moz-transform: rotate(-220deg);
+  -ms-transform: rotate(-220deg);
+  -o-transform: rotate(-220deg);
+  top: 670px;
+  left: 610px;
 }
 
 .seven{
-  -webkit-transform: rotate(-220deg);
+  -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  top: 670px;
-  left: 615px;
+  top: 745px;
+  left: 385px;
 }
 
 .eight{
@@ -114,7 +114,7 @@ body {
   -ms-transform: rotate(-145deg);
   -o-transform: rotate(-145deg);
   top: 675px;
-  left: 165px;
+  left: 160px;
 }
 
 .nine{
@@ -122,7 +122,7 @@ body {
   -moz-transform: rotate(-110deg);
   -ms-transform: rotate(-110deg);
   -o-transform: rotate(-110deg);
-  top: 490px;
+  top: 480px;
   left: 30px;
 }
 
@@ -131,15 +131,25 @@ body {
 .hand {
 position: absolute;
 width: 10px; 
-height: 42%;
-top: 8%; /* offset hand vertically by 20% so its bottom is at center of circle */
+height: 50%;
+/*height: 42%;*/
+/* top: 8%; offset hand vertically by 20% so its bottom is at center of circle */
 left: 50%; /* offset hand horiz by 50% so its left is at center of circle*/
 margin-left: -5px; /* Account for hand width to center hand horizonally */
 background: white;
--moz-transform: rotate(0deg);
--ms-transform: rotate(0deg);
+-moz-transform: rotate(270deg);
+/*-moz-transform: rotate(36deg);  for #0*/
+/*-moz-transform: rotate(0deg);  for #1*/
+/*-moz-transform: rotate(0deg);  for #2*/
+/*-moz-transform: rotate(0deg);  for #3*/
+/*-moz-transform: rotate(0deg);  for #4*/
+/*-moz-transform: rotate(0deg);  for #5*/
+/*-moz-transform: rotate(0deg);  for #6*/
+/*-moz-transform: rotate(0deg);  for #7*/
+/*-moz-transform: rotate(0deg);  for #8*/
+/*-moz-transform: rotate(0deg);  for #9*/
 -webkit-transform: rotate(0deg);
-transform: rotate(0deg);
+transform: rotate(270deg);
 -moz-transform-origin: bottom; /* Set transform origin to center bottom */
 -ms-transform-origin: bottom;
 -webkit-transform-origin: bottom;
