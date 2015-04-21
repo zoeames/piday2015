@@ -6,3 +6,9 @@ body {
 h1{
 	text-align: center;
 }
+
+
+.piImg{
+	height: 400px;
+	width: 400px;
+}
