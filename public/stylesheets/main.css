@@ -1,8 +1,6 @@
 body {  
+  background-color: black;
   color: white;
-  background: url(http://www.ellisoneducation.com/images/products/A10914.jpg);
-  background-repeat: no-repeat;
-  background-position: 425px 20px;
 }
 
 h1{
@@ -16,12 +14,12 @@ h1{
 
 .plain {
   display: inline-block;
-  color: black;
+  color: white;
 }
 
 .clrd{
   display: inline-block;
-  color: hotpink;
+  color: #3DFE3D;
 }
 
 
