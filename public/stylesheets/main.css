@@ -1,14 +1,28 @@
-body { 
-  background: black; 
+body {  
   color: white;
+  background: url(http://www.ellisoneducation.com/images/products/A10914.jpg);
+  background-repeat: no-repeat;
+  background-position: 425px 20px;
 }
 
 h1{
 	text-align: center;
 }
 
-
-.piImg{
-	height: 400px;
-	width: 400px;
+.row{
+  text-align: center;
 }
+
+
+.plain {
+  display: inline-block;
+  color: black;
+}
+
+.clrd{
+  display: inline-block;
+  color: hotpink;
+}
+
+
+
